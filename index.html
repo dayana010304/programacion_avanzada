@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  class="container">
+    <script src="app.js"></script>    
+   <script src="xxxxxxejercicio1.js"></script>    
+   <script src="ejercicio1_Case.js"></script>
+
+    <style>
+    .titulos{
+        background-color: rgb(38, 104, 226);
+        color: aliceblue;
+        border-radius: 2em;
+    }
+    .resultado{
+        background-color: #b0b7ca;
+        padding: 5em;
+        text-align: center;
+        font-size: large;
+        font-style: italic;
+    }
+    .tabla{
+        border: 3em;
+        border-color: rgb(42, 85, 165);
+        border-style: solid;
+        border-radius: 3em;
+    }
+    .boton{
+        border-radius: 1em;
+        background-color: rgb(100, 237, 134);
+        padding: 1em;
+        font-size: larger;
+        font-weight: 200;
+    }
+    .container{
+        display: inline;
+        background-color: rgb(118, 156, 228);
+box-shadow: rgb(109, 128, 165);
+margin: 40%;
+margin-left: 20%;
+
+    }
+    </style>
+<div>
+<table class="tabla">
+
+    <tr class="titulos">
+        <th>
+            Programa
+        </th>
+    
+        <th>
+            Promedio
+        </th>
+        <th>
+            Cantidad creditos
+        </th>
+        <th>
+            Valor credito
+        </th>
+        <th>
+            % Descuento
+        </th>
+        <th>
+            Total matricula
+        </th>
+    </tr>
+    <tr class="resultado">
+     <td>
+         
+         <input type="text" id="programa" value="" placeholder="Digite Pregrado o Postgradro"  >
+        </td>
+     
+        <td>
+            <input type="number" id="prom"  placeholder="4.5"  >
+        </td>
+        <td id="credito">
+     
+        </td>
+        <td  id="valorCredito">
+        </td>
+        <td>
+            <span id="descuento"></span>
+        </td>
+        <td>
+            <span id="matricula"></span>
+        </td>
+
+    </tr>
+</table>
+<div >
+    <input class="boton" type="submit" name="" onclick="calcular()" value="Calcular">
+</div>
+
+</div>
+
+</body>
+</html>
