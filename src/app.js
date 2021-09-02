@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.get('/', async (req, res) => {
     try{
-        const data = await Company.find().limit(10);
+        const data = await Company.find().sort({founded_month: -1}).limit(10);
         res.json(data);
     }
     catch(e){
